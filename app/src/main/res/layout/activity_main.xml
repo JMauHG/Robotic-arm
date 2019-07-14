@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Open"/>
+
+
+    <Button
+        android:id="@+id/btClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:layout_alignTop="@+id/btOpen"
+        android:layout_marginLeft="280dp"/>
+
+
+    <Spinner
+        android:id="@+id/spPWM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/PWM"
+        android:prompt="@string/pwm_vel"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/btVel"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/spPWM"
+        android:layout_toRightOf="@+id/spPWM"
+        android:text="Choose speed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="120dp"
+        android:text="left"/>
+
+    <Button
+        android:id="@+id/btRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="120dp"
+        android:text="right"/>
+
+    <Button
+        android:id="@+id/btRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="180dp"
+        android:text="read"/>
+
+    <TextView
+        android:id="@+id/tvRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="250dp"
+        android:text="" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="50dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
